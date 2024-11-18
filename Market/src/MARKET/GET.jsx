@@ -10,11 +10,11 @@ function GET() {
     axios
       .get("https://fakestoreapi.com/products")
       .then((response) => {
-        console.log(response)
-        
-        setData(response.data)
-        
-        setFilter(response.data) 
+        console.log(response.data);
+
+        setData(response.data);
+
+        setFilter(response.data);
       })
       .catch((error) => console.error("Xatolik:", error));
   }, []);
